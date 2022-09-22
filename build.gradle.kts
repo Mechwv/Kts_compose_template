@@ -1,5 +1,7 @@
 buildscript {
-    val compose_version by extra("1.1.1")
+    dependencies {
+        classpath("com.google.dagger:hilt-android-gradle-plugin:${Deps.hilt_version}")
+    }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id("com.android.application") version "7.2.0" apply false
